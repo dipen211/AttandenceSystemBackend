@@ -1,7 +1,7 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-const { generateRegistrationOptions, generateAuthenticationOptions, verifyRegistrationResponse, verifyAuthenticationResponse } = require("@simplewebauthn/server");
+import express from "express";
+import mongoose from "mongoose";
+import cors from "cors";
+import { generateRegistrationOptions, generateAuthenticationOptions, verifyRegistrationResponse } from "@simplewebauthn/server";
 
 const app = express();
 app.use(cors());
